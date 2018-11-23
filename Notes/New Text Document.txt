@@ -33,5 +33,9 @@ Java Scoping:
 
 Variable envioroment=== local memory
 
+CallBacks:
+	Passing a function as a parameter(Input).
+
 Higher Order Functions:
-	Are those functions that takes in another function(maybe as input != confirmed) or Return out as a function.
+	Are those functions that takes in another function as a Parameter(CallBAcks) or Return out as a function.
+	Also callbacks and higher order function allows us to run asynchronus code. 
