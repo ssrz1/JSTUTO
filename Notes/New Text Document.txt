@@ -1,0 +1,34 @@
+	
+	JS run on JS Engine which every browser has have such as chrome v8 for chrome.
+	Inside an JS engine we have thing called Parser read codes line by line (knows JS rules and known how it should be written in order tobe correct)
+	If everything is correct it make Abstract Syntax Tree which convert into Machine Code.
+
+Execution Context:
+	
+	A container which stores variables and in which a piece of our code is evaluated and executed.
+	By Default is Global Execution context i.e it is associated with global object
+	In browser thats the Window object.
+	
+	Execution context works in a form of execution stacks. 
+
+Execution context contain three things
+	1. Variable Objects -> Conatian fucntion argument, variable declartion ,function declation
+	2. Scope chain -> variable objects as well as all its parents
+	3. .this
+
+JS Hoisting:
+	Its a JS default bevaiour.
+	koi bhe ap variable declaration kartay hein code mey neechay aur ap use usay uper kar rahay hein
+	tou yei kaam ap kar sktay hein because JS use declartion ko utha k top pay lay ayeiga automatically
+		1. moving declaration to the top.
+		2. In JS a variable can be used before it has been declared.
+	NOTE: Initiliazation pay hoisted work nahe karta sirf Declaration pay waqt karta hai.
+	var y=7; //Initilaized   	var y; // Declared
+	value nahe day sktay haan agar declare use karnay k baad karo tou wo chalay ga aur usay hoisting khatay hein.
+
+Java Scoping:
+	Lexical Scoping:
+		one function which is lexically in another function which means it is written inside another function.
+		get access to its outer parent function.
+
+Variable envioroment=== local memory
