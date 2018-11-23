@@ -32,3 +32,6 @@ Java Scoping:
 		get access to its outer parent function.
 
 Variable envioroment=== local memory
+
+Higher Order Functions:
+	Are those functions that takes in another function(maybe as input != confirmed) or Return out as a function.
