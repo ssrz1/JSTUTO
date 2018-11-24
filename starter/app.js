@@ -19,4 +19,8 @@ activePlayer = 1;
 dice = Math.floor(Math.random() * 6 + 1);
 //querySelecter are use to select element from web page.
 document.querySelector("#current-" + activePlayer).textContent = dice;
+//when we use css class we us . operator
 document.querySelector(".dice").style.display = "none";
+
+//btn is a function and we are using without btn() simply because btn is a callback function and it will not be called by us instead eventListner will call it.
+document.querySelector(".btn-roll").addEventListener("click", btn);
