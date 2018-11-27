@@ -39,3 +39,19 @@ CallBacks:
 Higher Order Functions:
 	Are those functions that takes in another function as a Parameter(CallBAcks) or Return out as a function.
 	Also callbacks and higher order function allows us to run asynchronus code. 
+
+Objects:
+	"Everything in JS is an object". well its mostly true but not 100% correct since in JS we have 2 things one 
+	is primitive and other is Object.
+Primitive:
+	1.Numbers
+	2.Strings
+	3.Booleans
+	4.Undefined
+	5.Null
+OBjects:
+	Arrays
+	Functions
+	Objects
+	Date
+	wrappers for number string and boolens these all are OBJECTS.
