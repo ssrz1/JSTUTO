@@ -82,9 +82,12 @@ Objects, Prototypes and prototype chain:
 	* When a certain method is called the search starts in the object itself and if it cannot be found the search moves on to the objects prototyes.
 	  This continues until the method is found: PROTOYPE CHAIN.
 
-	
-
-
+FUNCTIONS:
+	A function is an Instance of an Object type. so it behaves like any other OBJECT.
+	-> We can store Function in a variable.
+	-> Also we can pass a function as an argument to another function.
+	-> We can also return a function from a function.
+Note: In callBack function we dont pass with parenthesis() but instead without parantheises.
 
 
 

@@ -58,3 +58,22 @@
 // console.log(obj2.age);
 
 // FUNCTIONS
+// Lecture: Passing function as arguments.
+
+var years = [1993, 1992, 1996, 2002, 2000];
+
+function arrayCalculator(arr, fn) {
+  var arrRes = [];
+  for (var i = 0; i < arr.length; i++) {
+    arrRes.push(fn(arr[i]));
+  }
+  return arrRes;
+}
+
+//Now this function is call callBack function it will oly be use once and it will be an argument for another function.
+function calculateAge(el) {
+  return 2018 - el;
+}
+
+var ages = arrayCalculator(years, calculateAge);
+console.log(ages);
