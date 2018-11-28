@@ -39,20 +39,22 @@
 //but in case of object it will effect the outcome since it works on PASS BY REFERNCE
 
 //Primitive
-var a = 23;
-var b = a;
+// var a = 23;
+// var b = a;
 
-a = 46;
-console.log(a);
-console.log(b);
+// a = 46;
+// console.log(a);
+// console.log(b);
 
-//Objects
-var obj1 = {
-  name: "Sajjad",
-  age: 26
-};
-var obj2 = obj1;
-obj1.age = 30;
+// //Objects
+// var obj1 = {
+//   name: "Sajjad",
+//   age: 26
+// };
+// var obj2 = obj1;
+// obj1.age = 30;
 
-console.log(obj1.age);
-console.log(obj2.age);
+// console.log(obj1.age);
+// console.log(obj2.age);
+
+// FUNCTIONS
