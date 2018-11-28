@@ -49,15 +49,19 @@ Primitive:
 	3.Booleans
 	4.Undefined
 	5.Null
+Most primitive types has object wrapper which is an object which allows then to inheritallay use methods which is PROTOTYPEICALLY asscoiated with them.
 OBjects:
 	Arrays
 	Functions
 	Objects
 	Date
 	wrappers for number string and boolens these all are OBJECTS.
+
 	 { lets say we do something like 42.toString()
-		-> it will give error we cannot access toString method or any other method for a fact BUT
-	if we something like const num = 42 and NOW we would like to convert into toString
+		-> it will give error we cannot access toString method or any other method for a fact because these
+	42 is a PRIMITIVE TYPE and these DONOT have methods associated with them(prototypes). so we will use Wrapper to access 
+	if we something like 
+	const num = 42    //and NOW we would like to convert into toString
 	-> num.toString()
 	we can do it and now OUTPUT will be 
 	-> "42"
