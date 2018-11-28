@@ -55,6 +55,15 @@ OBjects:
 	Objects
 	Date
 	wrappers for number string and boolens these all are OBJECTS.
+	 { lets say we do something like 42.toString()
+		-> it will give error we cannot access toString method or any other method for a fact BUT
+	if we something like const num = 42 and NOW we would like to convert into toString
+	-> num.toString()
+	we can do it and now OUTPUT will be 
+	-> "42"
+		
+
+}
 
 Constructor or Prototype are also called Classes in other language. we can create many instance we want.
 

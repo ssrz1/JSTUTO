@@ -16,7 +16,8 @@ var Person = function(name, yearOfBirth, job) {
 };
 
 var john = new Person("john", 1993, "teacher");
-console.log(john);
+var jane = new Person("jane", 1893, "farmer");
+var Mark = new Person("Mark", 1990, "jerk");
 
 john.calculateAge();
 
@@ -28,3 +29,7 @@ john.calculateAge();
 //     console.log(2016 - this.yearOfBirth);
 // }
 // and then we will remove this method from constructor method but still other object will have this method through protoype
+// we can use it like this Notice that calculateAge function is not defined inside Constructor function
+// john.calculateAge();
+// jane.calculateAge();
+//Mark.calculateAge();
