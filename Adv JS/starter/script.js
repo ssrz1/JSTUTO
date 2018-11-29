@@ -62,6 +62,9 @@
 
 var years = [1993, 1992, 1996, 2002, 2000];
 
+//Genereric Array
+//which loops over Input array
+//and than we give fuction which calculate something  based on each element of the array
 function arrayCalculator(arr, fn) {
   var arrRes = [];
   for (var i = 0; i < arr.length; i++) {
@@ -74,6 +77,19 @@ function arrayCalculator(arr, fn) {
 function calculateAge(el) {
   return 2018 - el;
 }
+//another example of callBack
+function isFullAge(el) {
+  return el >= 18;
+}
+
+function maxHeartRate(el) {
+  return 206.9 - 0.67 * el;
+}
 
 var ages = arrayCalculator(years, calculateAge);
+var fullAges = arrayCalculator(ages, isFullAge);
+var rates = arrayCalculator(ages, maxHeartRate);
+
 console.log(ages);
+console.log(fullAges);
+console.log(rates);
