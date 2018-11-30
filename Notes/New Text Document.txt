@@ -90,6 +90,9 @@ FUNCTIONS:
 Note: In callBack function we dont pass with parenthesis() but instead without parantheises.
 
 
+Closure:
+	When we return fuction from a function.
+	In JS only propety of function is differnt from an object that it can be invoke.
 
 
 

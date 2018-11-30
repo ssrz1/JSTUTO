@@ -94,27 +94,27 @@ var years = [1993, 1992, 1996, 2002, 2000];
 // console.log(fullAges);
 // console.log(rates);
 
-//FUNCTIONS RETURNING FUNCTIONS
+// //FUNCTIONS RETURNING FUNCTIONS
 
-//programs that create differnt interview questions for differnt jobs
+// //programs that create differnt interview questions for differnt jobs
 
-function interviewQuestion(job) {
-  if (job === "Designer") {
-    return function(name) {
-      console.log(name + ", tell me more about UX design?");
-    };
-  } else if (job === "Teacher") {
-    return function(name) {
-      console.log("what subject do you teach?" + name);
-    };
-  }
-}
+// function interviewQuestion(job) {
+//   if (job === "Designer") {
+//     return function(name) {
+//       console.log(name + ", tell me more about UX design?");
+//     };
+//   } else if (job === "Teacher") {
+//     return function(name) {
+//       console.log("what subject do you teach?" + name);
+//     };
+//   }
+// }
 
-//since we are returning a function we have to store in some variable.
+// //since we are returning a function we have to store in some variable.
 
-// var teacherQues = interviewQuestion("teacher");
-// teacherQues("Sajjad");
-//Alternatively we can also do something like
-interviewQuestion("teacher")("Sajjad");
-var designerQues = interviewQuestion("Designer");
-designerQues("Syed");
+// // var teacherQues = interviewQuestion("teacher");
+// // teacherQues("Sajjad");
+// //Alternatively we can also do something like
+// interviewQuestion("teacher")("Sajjad");
+// var designerQues = interviewQuestion("Designer");
+// designerQues("Syed");
