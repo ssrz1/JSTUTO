@@ -65,31 +65,56 @@ var years = [1993, 1992, 1996, 2002, 2000];
 //Genereric Array
 //which loops over Input array
 //and than we give fuction which calculate something  based on each element of the array
-function arrayCalculator(arr, fn) {
-  var arrRes = [];
-  for (var i = 0; i < arr.length; i++) {
-    arrRes.push(fn(arr[i]));
+// function arrayCalculator(arr, fn) {
+//   var arrRes = [];
+//   for (var i = 0; i < arr.length; i++) {
+//     arrRes.push(fn(arr[i]));
+//   }
+//   return arrRes;
+// }
+
+// //Now this function is call callBack function it will oly be use once and it will be an argument for another function.
+// function calculateAge(el) {
+//   return 2018 - el;
+// }
+// //another example of callBack
+// function isFullAge(el) {
+//   return el >= 18;
+// }
+
+// function maxHeartRate(el) {
+//   return 206.9 - 0.67 * el;
+// }
+
+// var ages = arrayCalculator(years, calculateAge);
+// var fullAges = arrayCalculator(ages, isFullAge);
+// var rates = arrayCalculator(ages, maxHeartRate);
+
+// console.log(ages);
+// console.log(fullAges);
+// console.log(rates);
+
+//FUNCTIONS RETURNING FUNCTIONS
+
+//programs that create differnt interview questions for differnt jobs
+
+function interviewQuestion(job) {
+  if (job === "Designer") {
+    return function(name) {
+      console.log(name + ", tell me more about UX design?");
+    };
+  } else if (job === "Teacher") {
+    return function(name) {
+      console.log("what subject do you teach?" + name);
+    };
   }
-  return arrRes;
 }
 
-//Now this function is call callBack function it will oly be use once and it will be an argument for another function.
-function calculateAge(el) {
-  return 2018 - el;
-}
-//another example of callBack
-function isFullAge(el) {
-  return el >= 18;
-}
+//since we are returning a function we have to store in some variable.
 
-function maxHeartRate(el) {
-  return 206.9 - 0.67 * el;
-}
-
-var ages = arrayCalculator(years, calculateAge);
-var fullAges = arrayCalculator(ages, isFullAge);
-var rates = arrayCalculator(ages, maxHeartRate);
-
-console.log(ages);
-console.log(fullAges);
-console.log(rates);
+// var teacherQues = interviewQuestion("teacher");
+// teacherQues("Sajjad");
+//Alternatively we can also do something like
+interviewQuestion("teacher")("Sajjad");
+var designerQues = interviewQuestion("Designer");
+designerQues("Syed");
