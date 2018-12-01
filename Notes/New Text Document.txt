@@ -5,6 +5,8 @@
 
 Execution Context:
 	
+	When we execute a FUNCTION we create brand new "Execution Context"
+
 	A container which stores variables and in which a piece of our code is evaluated and executed.
 	By Default is Global Execution context i.e it is associated with global object
 	In browser thats the Window object.
