@@ -1,4 +1,6 @@
-	
+	Read It -> *  https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8
+
+
 	JS run on JS Engine which every browser has have such as chrome v8 for chrome.
 	Inside an JS engine we have thing called Parser read codes line by line (knows JS rules and known how it should be written in order tobe correct)
 	If everything is correct it make Abstract Syntax Tree which convert into Machine Code.
