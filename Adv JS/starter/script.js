@@ -141,13 +141,29 @@ var years = [1993, 1992, 1996, 2002, 2000];
 
 //What happen if we execute myNewFunctionn again?
 
-function outer() {
-  let counter = 0;
-  function incrementCounter() {
-    counter++;
-  }
-  return incrementCounter;
-}
-let myNewFunction = outer();
-outer();
-// console.log(outer);
+// function outer() {
+//   let counter = 0;
+//   function incrementCounter() {
+//     counter++;
+//   }
+//   return incrementCounter;
+// }
+// let myNewFunction = outer();
+// outer();
+// // console.log(outer);
+
+//Also for closures
+
+var addTo = function(passed) {
+  var add = function(inner) {
+    return passed + inner;
+  };
+  return add;
+};
+var addThree = new addTo(3);
+var addFour = new addTo(4);
+
+//for innner
+
+console.log(addThree(1));
+console.log(addFour(1));
