@@ -28,7 +28,7 @@ JS Hoisting:
 	var y=7; //Initilaized   	var y; // Declared
 	value nahe day sktay haan agar declare use karnay k baad karo tou wo chalay ga aur usay hoisting khatay hein.
 
-Java Scoping:
+JS Scoping:
 	Lexical Scoping:
 		one function which is lexically in another function which means it is written inside another function.
 		get access to its outer parent function.
@@ -91,7 +91,7 @@ FUNCTIONS:
 	-> We can also return a function from a function.
 Note: In callBack function we dont pass with parenthesis() but instead without parantheises.
 
-
+(watch hard parts video 4)
 Closure:
 	When we return fuction from a function.
 	In JS only propety of function is differnt from an object that it can be invoke.
