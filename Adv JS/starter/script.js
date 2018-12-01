@@ -118,3 +118,23 @@ var years = [1993, 1992, 1996, 2002, 2000];
 // interviewQuestion("teacher")("Sajjad");
 // var designerQues = interviewQuestion("Designer");
 // designerQues("Syed");
+
+// IIFE (immediately invoked function expresion)
+
+//Closures
+//Lets call(run) our generated function with input 3
+//Since A function is an Instance of an Object type. so it behaves like any other OBJECT.
+//-> We can store Function in a variable.
+
+function instrunctionGenerator() {
+  function multiplyBy2(num) {
+    return num * 2;
+  }
+  return multiplyBy2;
+}
+
+let generatedFunc = instrunctionGenerator();
+
+let result = generatedFunc(3);
+
+console.log(result);
