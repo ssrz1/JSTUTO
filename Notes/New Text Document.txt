@@ -101,5 +101,10 @@ Closure:
 
 
 
-
+Asynchronous JavaScript:
+	JS is single threaded(one command executing at a time) and has synchronus execution model.
+	So what if we need to wait some time before we can execute?
+	delay some code execution but not wanting to block the thread?
+What do we do? let see 2 examples
+	 
 
