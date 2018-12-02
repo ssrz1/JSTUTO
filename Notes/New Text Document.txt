@@ -93,6 +93,7 @@ FUNCTIONS:
 	-> We can also return a function from a function.
 Note: In callBack function we dont pass with parenthesis() but instead without parantheises.
 
+
 (watch hard parts video 4)
 Closure:
 	When we return fuction from a function.
@@ -107,4 +108,44 @@ Asynchronous JavaScript:
 	delay some code execution but not wanting to block the thread?
 What do we do? let see 2 examples
 	 
+	-> In what order will our console log occurs?
+	
+	function printHello(){
+		console.log("HELLO");
+
+	}
+	
+	setTimeout(printHello,1000);
+	console.log("Me First")
+//NO BLOCKING?
+ 	 
+in this case "Me First" happend first and in theory atleast 1000secs later printHello happpens. its not blocking but our current JS model is not explaining about this system yet.
+
+	2nd Example
+ 	-> In what order will our console log occurs?
+	
+	function printHello(){
+		console.log("HELLO");
+
+	}
+	
+	setTimeout(printHello,0);
+	console.log("Me First")
+
+Ans: Even in this situation printHello will come after "Me first". So our previous model of JS execution is insufficient.
+	We need to introduce 3 new components of our platform.
+	- Thread of execution.
+	-Memory/variable enviroment.
+	-Call Stack.
+Adding:
+	-Web Browser APIs/Node background threads.
+	-Callbacks/Message/Task queue
+	-Event loop
+
+
+
+
+
+
+
 
