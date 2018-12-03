@@ -46,6 +46,33 @@ Higher Order Functions:
 	Are those functions that takes in another function as a Parameter(CallBAcks) or Return out as a function.
 	Also callbacks and higher order function allows us to run asynchronus code. 
 
+
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+//Higher Oder Function && Clousre EXMAPLE
+
+Closure:
+because when ananymous fuction created here it also retains the value of factor.
+
+function multiplier(factor){
+	return function(x) {
+		return x * factor;
+	}
+}
+
+
+
+
+let doubler = mutilpier(2);
+let tripler = multiplier(3);
+
+doubler(4)
+-> 8
+tripler(4)
+-> 12
+
+/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*
+
+
 Objects:
 	"Everything in JS is an object". well its mostly true but not 100% correct since in JS we have 2 things one 
 	is primitive and other is Object.
@@ -143,11 +170,5 @@ Adding:
 	-Web Browser APIs/Node background threads.
 	-Callbacks/Message/Task queue
 	-Event loop
-
-
-
-
-
-
 
 
