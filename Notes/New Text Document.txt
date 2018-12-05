@@ -51,7 +51,7 @@ Higher Order Functions:
 //Higher Oder Function && Clousre EXMAPLE
 
 Closure:
-because when ananymous fuction created here it also retains the value of factor.
+	because when ananymous fuction created here it also retains the value of factor.
 
 function multiplier(factor){
 	return function(x) {
@@ -122,6 +122,15 @@ FUNCTIONS:
 	-> We can also return a function from a function.
 Note: In callBack function we dont pass with parenthesis() but instead without parantheises.
 
+Immediately Invoked Fuction Expression IIFE:
+
+	* A function Expression that gets invoked immediately.
+	* Creates Closure
+	* Doesnt add or modify global objects.
+
+
+
+
 
 (watch hard parts video 4)
 Closure:
@@ -171,4 +180,7 @@ Adding:
 	-Callbacks/Message/Task queue
 	-Event loop
 
+Turnary operator:
+ condition ? () : ()
+//^ aik condition hoge agar wo true hai tou phala bracket execute hojae warna ager wo FALSE hai tou dosra bracket execute hojayei
 
