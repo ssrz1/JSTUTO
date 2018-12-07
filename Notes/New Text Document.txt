@@ -177,10 +177,18 @@ Ans: Even in this situation printHello will come after "Me first". So our previo
 	-Call Stack.
 Adding:
 	-Web Browser APIs/Node background threads.
+		Browser or Web APIs are built into your web browser, and are able to expose data from the browser and surrounding computer environment and do useful complex things with it.
+	 	They are not part of the JavaScript language itself, rather they are built on top of the core JavaScript language, 
+		providing you with extra superpowers to use in your JavaScript code.
 	-Callbacks/Message/Task queue
 	-Event loop
+
+	How is JavaScript asynchronous and single-threaded ?” The short answer is that JavaScript language is single-threaded and the asynchronous behaviour is not part of the JavaScript language itself, 
+	rather they are built on top of the core JavaScript language in the browser (or the programming environment) and accessed through the browser APIs.
 
 Turnary operator:
  condition ? () : ()
 //^ aik condition hoge agar wo true hai tou phala bracket execute hojae warna ager wo FALSE hai tou dosra bracket execute hojayei
 
+
+JS ASYNCRONITY
