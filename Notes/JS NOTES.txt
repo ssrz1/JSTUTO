@@ -121,6 +121,10 @@ FUNCTIONS:
 	-> We can store Function in a variable.
 	-> Also we can pass a function as an argument to another function.
 	-> We can also return a function from a function.
+
+
+function that is inside an Object or part of a class are called Methods.
+
 Note: In callBack function we dont pass with parenthesis() but instead without parantheises.
 
 Immediately Invoked Fuction Expression IIFE:
@@ -202,3 +206,60 @@ REACT ROUTER DOM vs Others
 	react-router-dom works perfectly fine with Redux, NO NEED of react-router-redux. (confirmed by Dan abramov - creator of Redux)
 	Extra Benefit of react-router-redux is you can keep your router in sync with application state.RESTFUL API:
 	A RESTful API is a Style by which we can uses HTTP requests to GET, PUT, POST and DELETE data.
+
+
+Design Patterns:
+	
+	Module Design Pattern:
+		* Its is one of the most used design patterns for keeping particular pieces of code INDEPENDENT from eac other.
+		* It allo us to break up with differnt parts of code to make it easier to maintain
+`		* Also it can provide encapsulation which can protect properties and function from being accessed from other parts of the code.
+
+		* Before JS we can setup a code using IIFE
+			(function()) {
+				//declare private variable and/or functions
+				
+			return{
+			//declare private variable and/or functions
+		}
+			})();
+
+		* After es6 we can accomplish this pattern using classes.
+
+		class ShoppingDataType {	
+			//private properties	
+			this.shoppingList =['coffee','chicken','pizza']
+
+		}
+
+  			  //public methods
+   			 getShoppingList(){
+       			 return this.shoppingList.join(", ");
+
+    		}
+    		addItem()
+   		 {
+
+       		 }
+     	export default ShoppingDataType;
+
+	//main.js from ''
+	import ShoppingDataType;
+//using this we can allow to print list in other file
+	var shopping = newShoppingDataType;
+	console.log(shopping.getShoppingList());
+
+         JavaScript modules are the most prevalently used design patterns for keeping particular pieces of code independent of other components.
+         This provides loose coupling to support well-structured code.
+
+          Modules are JavaScript "classes".
+ 	  One of the many advantages of classes is encapsulation - protecting states and behaviors from being accessed from other classes
+	* Whole point of modules is that youre keeping code seperated usually in differnt files.
+
+Singleton:
+		A Singleton only allows for a single instantiation, but many instances of the same object.
+ 		The Singleton restricts clients from creating multiple objects, after the first object created, it will return instances of itself.
+
+		One example is using an office printer. 
+		If there are ten people in an office, and they all use one printer, ten computers share one printer (instance).
+		By sharing one printer, they share the same resources.
