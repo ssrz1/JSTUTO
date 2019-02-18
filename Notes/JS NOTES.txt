@@ -1,4 +1,39 @@
 JavaScript has a "dynammic typing" which means data types are automatically assigned to variables.https://www.youtube.com/watch?v=C5fr0LZLMAs
+Dynamic Typing vs Static Typing?               ^ check video.
+
+Dynamic TYpe:
+	1.Run
+	2.Check types
+ var name = "Fido"; // since it is Dynammic Type we can turn arround and do
+ name =25; // here in JS world we can 'REASSIGN' name to a number if i want it allow us to do even its Other type.
+ ^ YOU can DO this, But DONT do it.
+Static Types:
+       1.Check Types
+       2.Run
+       
+Also JS has a weak typing check out.
+	4 + '7'; // '47' Since it has weak type it will not give errors here intead it will convert num to string. since it does not make sense to add num into String and concatenate 2 strings.
+	4 * '7'; // 28 in this it convert '7' into normal 7 and multiply it.
+	2 + true; // 3
+	false - 3; // -3
+
+
+
+BOOLEAN LOGIC:
+	AND (&&) => true if ALL are true.
+	OR (||) =>  true if 0NE is true.
+	NOT (!) => inverts true/false value.
+
+Truthy/Falsey Values:
+	If evaluated these values will be considerd FALSE and that are:
+	1. undefined 2.null 3. 0(Zero)   4. '' 5. NaN
+Truthy Values: 
+	NOT a falsy values.
+
+Array:
+ we can have differt data types all in one Data structures in one Array.
+	e.g: var john = ['John', 'Smith', 1990, 'teacher',false]; //this is correct.  
+
 
 important javaScript notes	
 
@@ -6,7 +41,7 @@ Read It -> *  https://medium.com/dailyjs/i-never-understood-javascript-closures-
 
 
 	JS run on JS Engine which every browser has have such as chrome v8 for chrome.
-	Inside an JS engine we have thing called Parser read codes line by line (knows JS rules and known how it should be written in order tobe correct)
+	Inside an JS engine we have thing called Parser read codes line by line (knows JS rules and known how it should be written in order to be correct)
 	If everything is correct it make Abstract Syntax Tree which convert into Machine Code.
 
 Execution Context:
@@ -30,7 +65,7 @@ JS Hoisting:
 	tou yei kaam ap kar sktay hein because JS use declartion ko utha k top pay lay ayeiga automatically
 		1. moving declaration to the top.
 		2. In JS a variable can be used before it has been declared.
-	NOTE: Initiliazation pay hoisted work nahe karta sirf Declaration pay waqt karta hai.
+	NOTE: Initiliazation pay hoisted work nahe karta sirf Declaration pay work karta hai.
 	var y=7; //Initilaized   	var y; // Declared
 	value nahe day sktay haan agar declare use karnay k baad karo tou wo chalay ga aur usay hoisting khatay hein.
 
@@ -208,9 +243,9 @@ Type ErroR:
 	e.g: const length = 12;
 	     const num = length(54);
  * IF you pass 54 like this it will give you Type Error. length is not a function.
- the TYype you have used is Wrong.
+ the Type you have used is Wrong.
 
-In Programming "type" is a classification of information. const num=42 or const name= "sajjad"
+In Programming "type" is a classification of information.example const num=42 or const name= "sajjad"
 
 IMPORTANT.
 * What if you create a variable, but dont give it any value? what type would that be? Its not a number, string , boolean or anything?
@@ -286,3 +321,9 @@ Singleton:
 		One example is using an office printer. 
 		If there are ten people in an office, and they all use one printer, ten computers share one printer (instance).
 		By sharing one printer, they share the same resources.
+
+
+
+
+
+
