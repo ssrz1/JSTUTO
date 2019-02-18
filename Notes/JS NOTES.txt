@@ -1,3 +1,4 @@
+JavaScript has a "dynammic typing" which means data types are automatically assigned to variables.https://www.youtube.com/watch?v=C5fr0LZLMAs
 
 important javaScript notes	
 
@@ -196,6 +197,27 @@ Turnary operator:
 //^ aik condition hoge agar wo true hai tou phala bracket execute hojae warna ager wo FALSE hai tou dosra bracket execute hojayei
 
 
+Syntax Error:
+	Breaking the rules of the language.
+
+Reference Error:
+	Using the wrong name. ap cha rahay ho Sajjad ko access karo but ap Zia ko kar rahay ho.
+
+Type ErroR:
+	Confusing one thing for another.
+	e.g: const length = 12;
+	     const num = length(54);
+ * IF you pass 54 like this it will give you Type Error. length is not a function.
+ the TYype you have used is Wrong.
+
+In Programming "type" is a classification of information. const num=42 or const name= "sajjad"
+
+IMPORTANT.
+* What if you create a variable, but dont give it any value? what type would that be? Its not a number, string , boolean or anything?
+
+Ans: JS does automaticaly behind the scene variable behind the variable actually has a special value- that is "Undefined"
+     and the type of variable is called "undefined".
+
 JS ASYNCRONITY
 
 
@@ -259,6 +281,7 @@ Design Patterns:
 Singleton:
 		A Singleton only allows for a single instantiation, but many instances of the same object.
  		The Singleton restricts clients from creating multiple objects, after the first object created, it will return instances of itself.
+		It invole global instance.		
 
 		One example is using an office printer. 
 		If there are ten people in an office, and they all use one printer, ten computers share one printer (instance).
