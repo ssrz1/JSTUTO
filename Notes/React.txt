@@ -1,0 +1,23 @@
+Resources: https://web.stanford.edu/class/cs47si/
+2. react-native-styling-cheat-sheet: https://github.com/vhpoet/react-native-styling-cheat-sheet
+
+
+Component:
+	It is a javaScript function that returns some amount of JSX.(means what content we want to show on screen.)
+	Secondly we attempt to make components as reuseable as possible.So we can write one component and use it on several other locations.
+
+FlexBox:
+	It is a system of Positioning elements within the container.
+	e.g we have containing elements of VIEW and the child element of the TEXT we can use Flexbox.
+ 	We can tell react native how we want to position the text tag within the overall view tag.
+By default every thing in React Native will position itself in top left corner.
+	We need to be aware of to get our TEXT to be centered in the middle of VIEW we need to keep 2 things in mind.
+	
+	1. justifyContent
+		It is used to position elements in the VERTICAL DIRECTION.
+		justifyContent: 'flex-start'
+		justifyContent: 'center'
+		justifyContent: 'flex-end'.
+	it move from up to down only not changing it horizontillay
+	2. aliginItem
+		With alignItems we position items to the horizontal direction.
