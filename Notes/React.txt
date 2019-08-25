@@ -21,3 +21,80 @@ By default every thing in React Native will position itself in top left corner.
 	it move from up to down only not changing it horizontillay
 	2. aliginItem
 		With alignItems we position items to the horizontal direction.
+
+Redux Data flow:
+	1.A view calls store.dispatch(action)
+	2.Redux calls root reducer passing current state and the action.
+	3.Root reducers combines output for other reducers to singlw state tree.
+	4.Reudx stores save the new state tree.
+	5.Store updates any listening subscribers
+
+Reducers:
+	A reducers is a pure function taking the (current state and an actions) as a parameters.
+	The reducers is responsible of how section of state is changes through actions.
+
+	Reducer Example:
+	export default (state: Object = initialState, action: Object) => {
+	switch (action.type) {
+
+     	case types.ADD_BGM_LOGS.REQUEST:
+      	 return Immutable.merge(state, {
+         	isFetching: true
+     	  });
+
+    	 case types.ADD_BGM_LOGS.SUCCESS:
+      	 return Immutable.merge(state, {
+       	 data: action.data
+       	});
+
+    	 case types.ADD_BGM_LOGS.FAILURE:
+      	//reuseableFunctions.showAlert("Error", action.errorMessage);
+       	return Immutable.merge(state, {
+         	failure: true,
+         	isFetching: false,
+      	errorMessage: action.errorMessage
+      });
+
+    default:
+       return state;
+   }
+};
+
+Actions:
+	Actions are plain objects that must have a( type field and anything else required for action to update the state).
+
+
+	import { ADD_BGM_LOGS } from "./ActionTypes";
+
+	export function request(payload: Object) {
+  	return {
+   	payload,
+    	type: ADD_BGM_LOGS.REQUEST
+  };
+}
+
+	export function success(data: Object) {
+  	return {
+   	 data,
+   	 type: ADD_BGM_LOGS.SUCCESS
+  };
+}
+
+	export function failure(errorMessage: Object) {
+  	return {
+    	errorMessage,
+   	 type: ADD_BGM_LOGS.FAILURE
+  };
+}
+
+Note:
+1. Redux out of box supports only (synchronous actions)due to which it cant handle  api request and for that we use
+middleware libraries like redux-thunk or redux-saga etc to ENABLE Aysinc behaviour.
+
+2. Redux has applyMiddleware() functions that can be use when creating a store.
+
+3. Middleware can (intercept an action before it reaches reducers).
+
+
+Redux Saga Vs Redux Thunk:
+	
